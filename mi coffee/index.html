@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-6/css/all.css">
+    <link rel="shortcut icon" href="assets/images/logo1.png" type="image/x-icon">
+    <title>Mi coffee</title>
+</head>
+<body>
+    <section id="home">
+        <nav>
+            <div class="navbar-container">
+                <div class="bars-close">
+                    <a href="#" id="open" onclick="openNavbar()"><i class="fa fa-bars"></i></a> 
+                </div>
+                <div class="navbar" id="navbar">
+                    <div class="logo">
+                        <!-- <h1><span>M.i</span> Cof<span>fee</span></h1> -->
+                        <img src="assets/images/logo1.png" alt="Mi logo" height="50px">
+                    </div>
+                    
+                    <ul>
+                        <li>
+                            <a href="#home" id="homepage" onclick="home()" class="active">Home</a>
+                            <a href="#about-sec" id="about" onclick="about()">About</a>
+                            <a href="#order-section" id="order" onclick="order()">Order</a>
+                            <a href="#product-sect" id="product" onclick="product()">Product</a>
+                            <a href="#team" onclick="review()" id="review"
+                             onmouseenter="mauseEnter()" 
+                             onmouseleave="mouseLeave()">
+                             Review 
+                             <i class="fa fa-angle-double-down">
+                             </i>
+                            </a>
+                            <div class="review-drop" id="review-drop" onmouseenter="mauseEnter()" onmouseleave="mouseLeave()">
+                                <a href="#team" onclick="review()">Team</a>
+                                <a href="#review" onclick="review()">Comments</a></option>
+                                <a href="#review" onclick="review()">Last customer</a></option>
+                                <a href="#review" onclick="review()">Additional</a></option>
+                               
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <!-- <a href="#" id="close" onclick="closeNavbar()"><i class="fa fa-close"></i></a> -->
+                        <i class="fa fa-search" onclick="searchbox()"></i>
+                        <i class="fa fa-cart-plus"></i>
+                        <div class="search-box" id="search-box">
+                            <input type="search" name="search" id="search" placeholder="Search coffee ...">
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- <span class="hr"></span> -->
+            </div>
+
+            <div class="side-nav">
+                <div class="container">
+                    <div class="logo">
+                        <img src="assets/images/logo1.png" alt="Mi logo" height="50px">
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa fa-home"></i> </a></li>                        
+                        <li><a href="#"><i class="fa fa-flag"></i></a></li>                        
+                        <li><a href="#"><i class="fa fa-coffee"></i></a></li>                        
+                        <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>                        
+                        <li><a href="#"><i class="fa fa-history"></i></a></li>                        
+                    </ul>
+                    <span>
+                        <small>&copy; Maurice</small> 
+                    </span> 
+                </div>
+            </div>
+        </nav>
+    
+    </section>
+    <main id="homepage">
+        
+        <div class="background">
+            <img src="assets/images/back.webp" alt="" id="image">
+            
+        </div>
+        <div class="short" >
+            <h1>
+                <span class="span1">Welcome</span>
+                <span class="span2">to </span>
+                <span class="span3">M.I COFFEE </span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, <br>
+                Magnam labore totam dignissimos, hitecto assumenda <br>
+                quibusdam similique beatae nisi enim!
+            </p>  
+            <a href="#order-section" class="explore" id="about-sec">Explore more &rarr;</a>
+        </div>
+        <div class="social">
+            <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+            <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="my_img">
+            <ul class="ul1">
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+            </ul>
+            <ul class="ul2">
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+                <li><img src="assets/images/1.png" alt="rotatting cup of coffee"></li>
+            </ul>
+        </div>
+        <section id="about-section">
+            <div class="about-container">
+                
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th colspan="2"><h1>About coffee</h1></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="assets/images/2.png" alt="Cup of coffee" height="300px">
+                            </td>
+                            <td>
+                                <div>
+                                    <h2>What make our coffee special
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                                            Lit.Ipsam non quod provident! A illum hic dolorum in <br>
+                                            itecto molestiae debitis saepe. Reprehenderitrati io <br>
+                                            mollitia ea, atque repellendus suscipit. Quos, odio?
+                                        </p>
+                                    </h2>
+                                    
+                                </div>
+                                
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a href="#order-section" class="orderBtn">Order now</a></td>
+                            <td></td>
+                        </tr>
+                    
+                        
+                    </table>
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+    
+    <div class="order" id="order-section">
+        <div class="max-width">
+            <h1 align="center">Order a coffee</h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="assets/images/2.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Coffee name</strong></p>
+                        <p>Price: $5</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/images/8.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Coffee name</strong></p>
+                        <p>Price: $3.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/images/360_F_116619399_YA611bKNOW35ffK0OiyuaOcjAgXgKBui.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Coffee name</strong></p>
+                        <p>Price: $10</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/images/10.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Coffee name</strong></p>
+                        <p>Price: $5</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order</button>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="assets/images/17.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Coffee name</strong></p>
+                        <p>Price: $5</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/images/16.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Coffee name</strong></p>
+                        <p>Price: $3.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i> 
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/images/15.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Coffee name</strong></p>
+                        <p>Price: $10</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/images/12.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Coffee name</strong></p>
+                        <p>Price: $5</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order</button>
+                </div>
+            </div>
+            <h1 align="center" style="margin-top: 8%;" id="product-sect">Our Product</h1>
+            <div class="box-container2">
+                <div class="box" onmouseenter="document.getElementById('top-cover').style.display = 'flex';" onmouseleave="document.getElementById('top-cover').style.display = 'none';">
+                    <div class="top-cover" id="top-cover">
+                        <div>
+                            <i class="fa fa-cart-plus" style="--clr: green" title="Add to cart"></i>
+                            <i class="fa fa-heart" style="--clr: crimson" title="like"></i>
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+
+                        <button>Rate it</button>
+
+                    </div>
+                    <img src="assets/images/pro.png" alt="coffee" width="100%">
+                    <div>
+                        <p><strong>Fresh roasted coffee</strong></p>
+                        <p>Price: $13</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order <i class="fa fa-cart-plus"></i></button>
+                </div>
+                <div class="box" onmouseenter="document.getElementById('top-cover1').style.display = 'flex';"
+                 onmouseleave="document.getElementById('top-cover1').style.display = 'none';">
+                    <div class="top-cover" id="top-cover1">
+                        <div>
+                            <i class="fa fa-cart-plus" style="--clr: green" title="Add to cart"></i>
+                            <i class="fa fa-heart" style="--clr: crimson" title="like"></i>
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+
+                        <button>Rate it</button>
+
+                    </div>
+                    <img src="assets/images/pro2.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Ethipian coffee</strong></p>
+                        <p>Price: $26</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order <i class="fa fa-cart-plus"></i></button>
+                </div>
+                <div class="box" onmouseenter="document.getElementById('top-cover2').style.display = 'flex';" 
+                onmouseleave="document.getElementById('top-cover2').style.display = 'none';">
+                    <div class="top-cover" id="top-cover2">
+                        <div>
+                            <i class="fa fa-cart-plus" style="--clr: green" title="Add to cart"></i>
+                            <i class="fa fa-heart" style="--clr: crimson" title="like"></i>
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+
+                        <button>Rate it</button>
+
+                    </div>
+                    <img src="assets/images/pro3.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Hard black</strong></p>
+                        <p>Price: $21</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order <i class="fa fa-cart-plus"></i></button>
+                </div>
+                
+            </div>
+            <div class="box-container2">
+                
+                <div class="box" onmouseenter="document.getElementById('top-cover3').style.display = 'flex';" 
+                onmouseleave="document.getElementById('top-cover3').style.display = 'none';">
+                    <div class="top-cover" id="top-cover3">
+                        <div>
+                            <i class="fa fa-cart-plus" style="--clr: green" title="Add to cart"></i>
+                            <i class="fa fa-heart" style="--clr: crimson" title="like"></i>
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+
+                        <button>Rate it</button>
+
+                    </div>
+                    
+                    <img src="assets/images/pro4.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Howden coffee</strong></p>
+                        <p>Price: $15</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order <i class="fa fa-cart-plus"></i></button>
+                </div>
+                <div class="box" onmouseenter="document.getElementById('top-cover4').style.display = 'flex';" 
+                onmouseleave="document.getElementById('top-cover4').style.display = 'none';">
+                    <div class="top-cover" id="top-cover4">
+                        <div>
+                            <i class="fa fa-cart-plus" style="--clr: green" title="Add to cart"></i>
+                            <i class="fa fa-heart" style="--clr: crimson" title="like"></i>
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+
+                        <button>Rate it</button>
+
+                    </div>
+                    <img src="assets/images/pro5.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Black coffee</strong></p>
+                        <p>Price: $14</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order<i class="fa fa-cart-plus"></i></button>
+                </div>
+                <div class="box" onmouseenter="document.getElementById('top-cover5').style.display = 'flex';" 
+                onmouseleave="document.getElementById('top-cover5').style.display = 'none';">
+                    <div class="top-cover" id="top-cover5">
+                        <div>
+                            <i class="fa fa-cart-plus" style="--clr: green" title="Add to cart"></i>
+                            <i class="fa fa-heart" style="--clr: crimson" title="like"></i>
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+
+                        <button>Rate it</button>
+
+                    </div>
+                    <img src="assets/images/pro7.png" alt="coffee" width="100%">
+                    
+                    <div>
+                        <p><strong>Black coffee</strong></p>
+                        <p>Price: $14</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button type="submit" class="orderNow">Order<i class="fa fa-cart-plus"></i></button>
+                </div>
+                
+                
+            </div>
+            <div class="container3" id="team">
+                
+                <table>
+                    <tr>
+                        <th></th>
+                        <th><h1>______Our team____</h1></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="box-cont">
+                            <div class="box">
+                                <div class="img-cont">
+                                    <img src="assets/images/logo2.png" alt="Maurice picture with bead">
+                                </div>
+                                <p class="name"><strong>Jon Doe</strong></p>
+                                <div class="title">
+                                    <p>Owner of Mi coffee [CEO]</p>
+                                    <span>
+                                        <p>+250 790 799 069</p></i>
+                                    </span>
+                                </div>
+                                <a href="#" class="getin">Get in touch</a>
+                                <p class="decription">
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Autem expedita obcaecati quibusdam 
+                                    quos sed voluptatum officia, ullam repellat officiis
+                                    molestias sapiente, id nam at nobis aut 
+                                    necessitatibus. Dolores, ea quibusdam.
+                                </p>
+                            </div>
+                        </td>
+                        <td class="box-cont">
+                            <div class="box">
+                                <div class="img-cont">
+                                    <img src="assets/images/team3.jpg" alt="alain prince picture">
+                                </div>
+                                <p class="name"><strong>Alain Prince [ik giant]</strong></p>
+                                <div class="title">
+                                    <p>Manager of Mi coffee</p>
+                                    <span>
+                                        <p>+250 790 799 069</p></i>
+                                    </span>
+                                </div>
+                                <a href="#" class="getin">Get in touch</a>
+                                <p class="decription">
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Autem expedita obcaecati quibusdam 
+                                    quos sed voluptatum officia, ullam repellat officiis
+                                    molestias sapiente, id nam at nobis aut 
+                                    necessitatibus. Dolores, ea quibusdam.
+                                </p>
+                            </div>
+                        </td>
+                        <td class="box-cont">
+                            <div class="box">
+                                <div class="img-cont">
+                                    <img src="assets/images/team2.jpg" alt="Pacifique Picture">
+                                </div>
+                                <p class="name"><strong>Pier KALISA [Kap tv] </strong></p>
+                                <div class="title">
+                                    <p>Mi coffee IT</p>
+                                    <span>
+                                        <p>+250 790 799 069</p></i>
+                                    </span>
+                                </div>
+                                <a href="#" class="getin">Get in touch</a>
+                                <p class="decription">
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Autem expedita obcaecati quibusdam 
+                                    quos sed voluptatum officia, ullam repellat officiis
+                                    molestias sapiente, id nam at nobis aut 
+                                    necessitatibus. Dolores, ea quibusdam.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+                  
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript link -->
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
