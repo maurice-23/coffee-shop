@@ -18,15 +18,17 @@
         <nav>
             <div class="navbar-container">
                 <div class="bars-close">
-                    <a href="#" id="open" onclick="openNavbar()"><i class="fa fa-bars"></i></a> 
+                    <a id="open" onclick="openNavbar()"><i class="fa fa-bars"></i></a> 
                 </div>
                 <div class="navbar" id="navbar">
                     <div class="logo">
                         <!-- <h1><span>M.i</span> Cof<span>fee</span></h1> -->
-                        <img src="assets/images/logo1.png" alt="Mi logo" height="50px">
+                        <a href="#home">
+                            <img src="assets/images/logo1.png" alt="Mi logo" height="50px">
+                        </a>
                     </div>
                     
-                    <ul>
+                    <ul id="myUL">
                         <li>
                             <a href="#home" id="homepage" onclick="home()" class="active">Home</a>
                             <a href="#about-sec" id="about" onclick="about()">About</a>
@@ -53,7 +55,10 @@
                         <i class="fa fa-search" onclick="searchbox()"></i>
                         <i class="fa fa-cart-plus"></i>
                         <div class="search-box" id="search-box">
-                            <input type="search" name="search" id="search" placeholder="Search coffee ...">
+                            <form action="" method="get">
+                                <input type="search" name="search" id="myInput" placeholder="Search coffee ...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
                         </div>
                     </div>
                     
@@ -61,17 +66,17 @@
                 <!-- <span class="hr"></span> -->
             </div>
 
-            <div class="side-nav">
-                <div class="container">
+            <div class="side-nav" >
+                <div class="container" id="side-nav">
                     <div class="logo">
-                        <img src="assets/images/logo1.png" alt="Mi logo" height="50px">
+                        <a href="#home"><img src="assets/images/logo1.png" alt="Mi logo" height="50px"></a>
                     </div>
                     <ul>
                         <li class="active"><a href="#"><i class="fa fa-home"></i> </a></li>                        
-                        <li><a href="#"><i class="fa fa-flag"></i></a></li>                        
-                        <li><a href="#"><i class="fa fa-coffee"></i></a></li>                        
-                        <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>                        
-                        <li><a href="#"><i class="fa fa-history"></i></a></li>                        
+                        <!-- <li><a href="#"><i class="fa fa-flag"></i></a></li>                         -->
+                        <li><a href="#order-section"><i class="fa fa-coffee"></i></a></li>                        
+                        <li><a href="#product-sect"><i class="fa fa-cart-plus"></i></a></li>                        
+                        <li><a href="#team"><i class="fa fa-history"></i></a></li>                        
                     </ul>
                     <span>
                         <small>&copy; Maurice</small> 
@@ -87,14 +92,16 @@
             <img src="assets/images/back.webp" alt="" id="image">
             
         </div>
-        <div class="short" >
-            <h1>
-                <span class="span1">Welcome</span>
-                <span class="span2">to </span>
-                <span class="span3">M.I COFFEE </span></h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, <br>
-                Magnam labore totam dignissimos, hitecto assumenda <br>
-                quibusdam similique beatae nisi enim!
+        <div class="short">
+            <h1> 
+                <span class="span1">Let's </span>
+                <span class="span2">take </span>
+                <span class="span3">A CUP COFFEE </span>
+            </h1>
+            <p>
+                You are at Mi coffee shop, we offer many types of coffee<br>
+                Explore our site to choose your favaurite coffeee<br>
+                Every coffee you 👇 want it is here 
             </p>  
             <a href="#order-section" class="explore" id="about-sec">Explore more &rarr;</a>
         </div>
@@ -185,7 +192,7 @@
                     <button type="submit" class="orderNow">Order</button>
                 </div>
                 <div class="box">
-                    <img src="assets/images/8.png" alt="coffee" width="100%">
+                    <img src="assets/images/8.png" alt="coffee">
                     
                     <div>
                         <p><strong>Coffee name</strong></p>
@@ -445,89 +452,32 @@
             </div>
             <div class="container3" id="team">
                 
-                <table>
-                    <tr>
-                        <th></th>
-                        <th><h1>______Our team____</h1></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td class="box-cont">
-                            <div class="box">
-                                <div class="img-cont">
-                                    <img src="assets/images/logo2.png" alt="Maurice picture with bead">
-                                </div>
-                                <p class="name"><strong>Jon Doe</strong></p>
-                                <div class="title">
-                                    <p>Owner of Mi coffee [CEO]</p>
-                                    <span>
-                                        <p>+250 790 799 069</p></i>
-                                    </span>
-                                </div>
-                                <a href="#" class="getin">Get in touch</a>
-                                <p class="decription">
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Autem expedita obcaecati quibusdam 
-                                    quos sed voluptatum officia, ullam repellat officiis
-                                    molestias sapiente, id nam at nobis aut 
-                                    necessitatibus. Dolores, ea quibusdam.
-                                </p>
-                            </div>
-                        </td>
-                        <td class="box-cont">
-                            <div class="box">
-                                <div class="img-cont">
-                                    <img src="assets/images/team3.jpg" alt="alain prince picture">
-                                </div>
-                                <p class="name"><strong>Alain Prince [ik giant]</strong></p>
-                                <div class="title">
-                                    <p>Manager of Mi coffee</p>
-                                    <span>
-                                        <p>+250 790 799 069</p></i>
-                                    </span>
-                                </div>
-                                <a href="#" class="getin">Get in touch</a>
-                                <p class="decription">
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Autem expedita obcaecati quibusdam 
-                                    quos sed voluptatum officia, ullam repellat officiis
-                                    molestias sapiente, id nam at nobis aut 
-                                    necessitatibus. Dolores, ea quibusdam.
-                                </p>
-                            </div>
-                        </td>
-                        <td class="box-cont">
-                            <div class="box">
-                                <div class="img-cont">
-                                    <img src="assets/images/team2.jpg" alt="Pacifique Picture">
-                                </div>
-                                <p class="name"><strong>Pier KALISA [Kap tv] </strong></p>
-                                <div class="title">
-                                    <p>Mi coffee IT</p>
-                                    <span>
-                                        <p>+250 790 799 069</p></i>
-                                    </span>
-                                </div>
-                                <a href="#" class="getin">Get in touch</a>
-                                <p class="decription">
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Autem expedita obcaecati quibusdam 
-                                    quos sed voluptatum officia, ullam repellat officiis
-                                    molestias sapiente, id nam at nobis aut 
-                                    necessitatibus. Dolores, ea quibusdam.
-                                </p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                
-                  
+                <tr>
+                    <div class="addon">
+                        <div class="box">
+                            <table>
+                                <tr>
+                                    <td><button id="prev">&#8882;</button></td>
+                                    <td colspan="2" class="large">
+                                        <h3> Our Team</h3>
+                                        <img src="" alt="coffee" id="number">
+                                        <strong><p id="expl"></p></strong> 
+                                        <p id="duties"> </p>
+                                    </td>
+                                    <td><button id="next">&#8883;</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </tr>
             </div>
         </div>
     </div>
 
     <!-- Javascript link -->
 
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js">
+       
+    </script>
 </body>
 </html>
