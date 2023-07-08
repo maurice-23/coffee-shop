@@ -1,4 +1,4 @@
-<iframe src="https://assets.pinterest.com/ext/embed.html?id=541698661426032480" height="445" width="345" frameborder="0" scrolling="no" ></iframe>
+
 <h1 align="center">Hi 👋, I'm Maurice</h1>
 <h3 align="center">A passionate frontend developer from Rwanda</h3>
 <img src="https://i.gifer.com/GYny.gif" width="400" align="right">
